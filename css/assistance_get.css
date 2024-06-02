@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+table {
+    background-color: #fff;
+}
+
+th, td {
+    text-align: center;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #9b59b6;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #7159a6;
+}

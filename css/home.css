@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+#menuIcon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sidenav a i {
+    margin-right: 10px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .nav-text {
+    display: inline-block;
+    transition: opacity 0.5s;
+}
+
+.sidenav.collapsed .nav-text {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #9b59b6;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #7159a6;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
